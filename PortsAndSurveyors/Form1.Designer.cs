@@ -45,6 +45,7 @@
             // gmap
             // 
             this.gmap.Bearing = 0F;
+            this.gmap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gmap.CanDragMap = true;
             this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
             this.gmap.GrayScaleMode = false;
@@ -67,6 +68,7 @@
             this.gmap.Size = new System.Drawing.Size(293, 480);
             this.gmap.TabIndex = 0;
             this.gmap.Zoom = 2D;
+            this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick);
             // 
             // Form1
             // 
