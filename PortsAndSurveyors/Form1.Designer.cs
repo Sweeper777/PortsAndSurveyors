@@ -70,6 +70,18 @@
         #endregion
 
         private GMap.NET.WindowsForms.GMapControl gmap;
+        private System.Windows.Forms.LinkLabel updateButton;
+        private System.Windows.Forms.Label statusLabel;
+        private System.Windows.Forms.ListBox portsListBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.ListBox surveyorsListBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox contactTextBox;
     }
 }
 
