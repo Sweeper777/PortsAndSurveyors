@@ -45,6 +45,12 @@ namespace PortsAndSurveyors {
             get; set;
         }
 
+        public PointLatLng Location {
+            get {
+                return new PointLatLng(Latitude, Longitude);
+            }
+        }
+    }
 
     public partial class Surveyor {
         [JsonProperty("id")]
