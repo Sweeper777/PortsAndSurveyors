@@ -1,1 +1,3 @@
-*.exe
+.vs/
+PortsAndSurveyors/bin/
+PortsAndSurveyors/obj/
