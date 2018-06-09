@@ -24,6 +24,22 @@
         /// </summary>
         private void InitializeComponent () {
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
+            this.updateButton = new System.Windows.Forms.LinkLabel();
+            this.statusLabel = new System.Windows.Forms.Label();
+            this.portsListBox = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.surveyorsListBox = new System.Windows.Forms.ListBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.contactTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // gmap
