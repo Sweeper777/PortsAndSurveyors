@@ -125,6 +125,17 @@
             this.surveyorsListBox.Name = "surveyorsListBox";
             this.surveyorsListBox.Size = new System.Drawing.Size(284, 139);
             this.surveyorsListBox.TabIndex = 6;
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackgroundImage = global::PortsAndSurveyors.Properties.Resources.search;
+            this.searchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.searchButton.Location = new System.Drawing.Point(264, 20);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(26, 26);
+            this.searchButton.TabIndex = 5;
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
