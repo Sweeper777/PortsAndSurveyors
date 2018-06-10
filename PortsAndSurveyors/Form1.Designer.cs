@@ -70,6 +70,17 @@
             this.gmap.Zoom = 2D;
             this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick);
             // 
+            // updateButton
+            // 
+            this.updateButton.AutoSize = true;
+            this.updateButton.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.updateButton.Location = new System.Drawing.Point(694, 459);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(247, 15);
+            this.updateButton.TabIndex = 1;
+            this.updateButton.TabStop = true;
+            this.updateButton.Text = "Update Ports and Suveyors Data";
+            this.updateButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.updateButton_LinkClicked);
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
