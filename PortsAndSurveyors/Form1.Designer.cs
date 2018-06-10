@@ -102,6 +102,19 @@
             this.portsListBox.Size = new System.Drawing.Size(284, 274);
             this.portsListBox.TabIndex = 3;
             this.portsListBox.SelectedIndexChanged += new System.EventHandler(this.portsListBox_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.surveyorsListBox);
+            this.groupBox1.Controls.Add(this.searchButton);
+            this.groupBox1.Controls.Add(this.searchTextBox);
+            this.groupBox1.Controls.Add(this.portsListBox);
+            this.groupBox1.Location = new System.Drawing.Point(313, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(298, 480);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Query";
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
