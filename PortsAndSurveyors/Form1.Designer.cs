@@ -115,6 +115,16 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Query";
+            // 
+            // surveyorsListBox
+            // 
+            this.surveyorsListBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.surveyorsListBox.FormattingEnabled = true;
+            this.surveyorsListBox.ItemHeight = 15;
+            this.surveyorsListBox.Location = new System.Drawing.Point(6, 332);
+            this.surveyorsListBox.Name = "surveyorsListBox";
+            this.surveyorsListBox.Size = new System.Drawing.Size(284, 139);
+            this.surveyorsListBox.TabIndex = 6;
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
