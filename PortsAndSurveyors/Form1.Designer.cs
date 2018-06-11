@@ -198,6 +198,24 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contact Details";
+            // 
+            // contactTextBox
+            // 
+            this.contactTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.contactTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.contactTextBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.contactTextBox.Location = new System.Drawing.Point(7, 21);
+            this.contactTextBox.Multiline = true;
+            this.contactTextBox.Name = "contactTextBox";
+            this.contactTextBox.ReadOnly = true;
+            this.contactTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.contactTextBox.Size = new System.Drawing.Size(299, 211);
+            this.contactTextBox.TabIndex = 0;
+            this.contactTextBox.Text = "This is some text xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+            this.contactTextBox.WordWrap = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
