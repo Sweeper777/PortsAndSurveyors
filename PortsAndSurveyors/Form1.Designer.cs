@@ -125,6 +125,7 @@
             this.surveyorsListBox.Name = "surveyorsListBox";
             this.surveyorsListBox.Size = new System.Drawing.Size(284, 139);
             this.surveyorsListBox.TabIndex = 6;
+            this.surveyorsListBox.SelectedIndexChanged += new System.EventHandler(this.surveyorsListBox_SelectedIndexChanged);
             // 
             // searchButton
             // 
@@ -231,7 +232,15 @@
             this.Name = "Form1";
             this.Text = "Ports and Surveyors";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
