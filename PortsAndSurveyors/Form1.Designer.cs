@@ -168,6 +168,23 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Price Details";
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.priceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.priceTextBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.priceTextBox.Location = new System.Drawing.Point(7, 21);
+            this.priceTextBox.Multiline = true;
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.ReadOnly = true;
+            this.priceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.priceTextBox.Size = new System.Drawing.Size(299, 153);
+            this.priceTextBox.TabIndex = 0;
+            this.priceTextBox.Text = "This is some text xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+            this.priceTextBox.WordWrap = false;
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
