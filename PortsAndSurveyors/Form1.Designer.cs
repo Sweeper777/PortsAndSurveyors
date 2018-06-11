@@ -220,6 +220,10 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(953, 504);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.statusLabel);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.gmap);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(969, 543);
