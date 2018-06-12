@@ -106,4 +106,14 @@ namespace PortsAndSurveyors {
         }
     }
 
+    public class StringArrayConverter : JsonConverter<string> {
+        public override string ReadJson(JsonReader reader, Type objectType, string existingValue, bool hasExistingValue, JsonSerializer serializer) {
+            var lines = serializer.Deserialize<string[]>(reader);
+            return string.Join(Environment.NewLine, lines);
+        }
+
+        public override void WriteJson(JsonWriter writer, string value, JsonSerializer serializer) {
+            throw new NotImplementedException();
+        }
+    }
 }
