@@ -69,13 +69,15 @@ namespace PortsAndSurveyors {
             get; set;
         }
 
+        [JsonConverter(typeof(StringArrayConverter))]
         [JsonProperty("contacts")]
-        public List<string> Contacts {
+        public string Contacts {
             get; set;
         }
 
+        [JsonConverter(typeof(StringArrayConverter))]
         [JsonProperty("prices")]
-        public List<string> Prices {
+        public string Prices {
             get; set;
         }
 
