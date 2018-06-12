@@ -95,6 +95,9 @@ namespace PortsAndSurveyors {
     public class SurveyorsConverter : JsonConverter<Dictionary<long, Surveyor>> {
         public override Dictionary<long, Surveyor> ReadJson(JsonReader reader, Type objectType, Dictionary<long, Surveyor> existingValue, bool hasExistingValue, JsonSerializer serializer) {
             var surveyors = serializer.Deserialize<Surveyor[]>(reader);
+            if (!surveyors.All(new HashSet<Surveyor>().Add)) {
+                throw new JsonSerializationException("Surveyor IDs contain duplicates!");
+            }
             return surveyors.ToDictionary(x => x.Id, x => x);
         }
 
