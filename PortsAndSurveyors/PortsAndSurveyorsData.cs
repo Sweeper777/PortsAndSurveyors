@@ -91,4 +91,16 @@ namespace PortsAndSurveyors {
             },
         };
     }
+
+    public class SurveyorsConverter : JsonConverter<Dictionary<long, Surveyor>> {
+        public override Dictionary<long, Surveyor> ReadJson(JsonReader reader, Type objectType, Dictionary<long, Surveyor> existingValue, bool hasExistingValue, JsonSerializer serializer) {
+            var surveyors = serializer.Deserialize<Surveyor[]>(reader);
+            return surveyors.ToDictionary(x => x.Id, x => x);
+        }
+
+        public override void WriteJson(JsonWriter writer, Dictionary<long, Surveyor> value, JsonSerializer serializer) {
+            throw new NotImplementedException();
+        }
+    }
+
 }
