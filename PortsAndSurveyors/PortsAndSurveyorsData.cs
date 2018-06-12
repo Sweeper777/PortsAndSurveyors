@@ -50,6 +50,10 @@ namespace PortsAndSurveyors {
                 return new PointLatLng(Latitude, Longitude);
             }
         }
+
+        public override string ToString() {
+            return Name;
+        }
     }
 
     public partial class Surveyor {
