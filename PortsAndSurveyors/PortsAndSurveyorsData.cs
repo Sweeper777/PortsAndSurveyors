@@ -76,6 +76,10 @@ namespace PortsAndSurveyors {
         public List<string> Prices {
             get; set;
         }
+
+        public override string ToString() {
+            return Name;
+        }
     }
 
     public partial class PortsAndASurveyorsData {
