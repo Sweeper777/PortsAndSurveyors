@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
 using GMap.NET;
 
 namespace PortsAndSurveyors {
@@ -18,8 +19,9 @@ namespace PortsAndSurveyors {
             get; set;
         }
 
+        [JsonConverter(typeof(SurveyorsConverter))]
         [JsonProperty("surveyors")]
-        public List<Surveyor> Surveyors {
+        public Dictionary<long, Surveyor> Surveyors {
             get; set;
         }
     }
