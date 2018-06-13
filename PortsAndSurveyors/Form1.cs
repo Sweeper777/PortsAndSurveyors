@@ -42,12 +42,6 @@ namespace PortsAndSurveyors {
             gmap.Position = new PointLatLng(0, 0);
 
 
-            GMapOverlay markers = new GMapOverlay("markers");
-            GMapMarker marker = new GMarkerGoogle(
-                new PointLatLng(48.8617774, 2.349272),
-                GMarkerGoogleType.red);
-            markers.Markers.Add(marker);
-            gmap.Overlays.Add(markers);
         }
     }
 }
