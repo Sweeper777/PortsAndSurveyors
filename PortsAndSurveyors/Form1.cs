@@ -13,6 +13,19 @@ using Newtonsoft.Json;
 
 namespace PortsAndSurveyors {
     public partial class Form1 : Form {
+        PortsAndASurveyorsData data;
+        GMapOverlay markersOverlay;
+        List<Port> filteredPorts;
+        string searchText = "";
+        List<Port> ShownPorts {
+            get {
+                if (searchText.Trim() == "" || filteredPorts == null) {
+                    return data.Ports;
+                }
+                return filteredPorts;
+            }
+        }
+
         public Form1 () {
             InitializeComponent ();
         }
