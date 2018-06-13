@@ -34,15 +34,13 @@ namespace PortsAndSurveyors {
             InitializeComponent ();
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
-            gmap.Zoom = 10;
-            gmap.MinZoom = 2;
-            gmap.MaxZoom = 14;
+        private async void Form1_Load(object sender, EventArgs e) {
+            gmap.MapProvider = BingMapProvider.Instance;
+            GMaps.Instance.Mode = AccessMode.ServerAndCache;
+            gmap.MinZoom = 1;
+            gmap.MaxZoom = 5;
             gmap.Position = new PointLatLng(0, 0);
-            gmap.MapProvider = GoogleMapProvider.Instance;
-            GMaps.Instance.Mode = AccessMode.ServerOnly;
 
-            gmap.ShowCenter = false;
 
             GMapOverlay markers = new GMapOverlay("markers");
             GMapMarker marker = new GMarkerGoogle(
