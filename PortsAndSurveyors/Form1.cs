@@ -40,8 +40,11 @@ namespace PortsAndSurveyors {
             gmap.MinZoom = 1;
             gmap.MaxZoom = 5;
             gmap.Position = new PointLatLng(0, 0);
+            
 
+            await InitalizeData();
 
+            ReloadEverything();
         }
     }
 }
