@@ -26,6 +26,10 @@ namespace PortsAndSurveyors {
             }
         }
 
+        static readonly string DataURL = "https://pastebin.com/raw/UpafAyTR";
+        static readonly string FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Ports and Surveyors");
+        static readonly string FileName = "data.json";
+
         public Form1 () {
             InitializeComponent ();
         }
