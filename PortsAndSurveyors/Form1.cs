@@ -46,6 +46,19 @@ namespace PortsAndSurveyors {
 
             ReloadEverything();
         }
+
+        private void ReloadEverything() {
+            if (data != null) {
+                LoadMarkers();
+                portsListBox.Items.Clear();
+                portsListBox.Items.AddRange(ShownPorts.OrderBy(x => x.Name).ToArray());
+                //Console.WriteLine(data.Surveyors);
+                surveyorsListBox.Items.Clear();
+            } else {
+                MessageBox.Show("Invalid Data Detected!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private async Task InitalizeData() {
             if (File.Exists(Path.Combine(FilePath, FileName))) {
                 await LoadExistingPortsAndSurveyorsData();
