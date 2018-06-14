@@ -46,5 +46,17 @@ namespace PortsAndSurveyors {
 
             ReloadEverything();
         }
+        private bool VerifyData(PortsAndASurveyorsData data) {
+            if (data.Ports == null || data.Surveyors == null) {
+                return false;
+            }
+            if (data.Ports.SelectMany(x => x.Surveyors).Any(x => !data.Surveyors.ContainsKey(x))) {
+                return false;
+            }
+            if (data.Ports.Any(x => x.Surveyors.Count == 0)) {
+                return false;
+            }
+            return true;
+        }
     }
 }
