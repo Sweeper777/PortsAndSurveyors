@@ -46,6 +46,17 @@ namespace PortsAndSurveyors {
 
             ReloadEverything();
         }
+        private async Task InitalizeData() {
+            if (File.Exists(Path.Combine(FilePath, FileName))) {
+                await LoadExistingPortsAndSurveyorsData();
+            } else {
+                if (!Directory.Exists(FilePath)) {
+                    Directory.CreateDirectory(FilePath);
+                }
+                await UpdatePortsAndSurveyorsData();
+            }
+        }
+
         private async Task LoadExistingPortsAndSurveyorsData() {
             statusLabel.Text = "Loading ports and surveyors data...";
             using (var reader = File.OpenText(Path.Combine(FilePath, FileName))) {
