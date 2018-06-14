@@ -58,5 +58,21 @@ namespace PortsAndSurveyors {
             }
             return true;
         }
+        
+        void LoadPortsAndSurveyorsData(string json) {
+            try {
+                data = PortsAndASurveyorsData.FromJson(json);
+            } catch (JsonSerializationException) {
+                data = null;
+                statusLabel.Text = "Invalid Data Detected";
+                return;
+            }
+            if (!VerifyData(data)) {
+                data = null;
+                statusLabel.Text = "Invalid Data Detected";
+                return;
+            }
+            statusLabel.Text = "Successfully loaded ports and surveyors data.";
+        }
     }
 }
