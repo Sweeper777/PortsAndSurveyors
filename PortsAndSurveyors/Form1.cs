@@ -46,6 +46,12 @@ namespace PortsAndSurveyors {
 
             ReloadEverything();
         }
+        async Task<string> DownloadPortsAndSurveyorsData() {
+            var client = new WebClient();
+            var json = await client.DownloadStringTaskAsync(new Uri(DataURL));
+            return json;
+        }
+
         private bool VerifyData(PortsAndASurveyorsData data) {
             if (data.Ports == null || data.Surveyors == null) {
                 return false;
