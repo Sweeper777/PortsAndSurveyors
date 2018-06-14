@@ -46,6 +46,18 @@ namespace PortsAndSurveyors {
 
             ReloadEverything();
         }
+        private async Task UpdatePortsAndSurveyorsData() {
+            statusLabel.Text = "Loading ports and surveyors data...";
+            var json = await DownloadPortsAndSurveyorsData();
+            LoadPortsAndSurveyorsData(json);
+
+            if (data != null) {
+                using (var writer = File.CreateText(Path.Combine(FilePath, FileName))) {
+                    await writer.WriteAsync(json);
+                } 
+            }
+        }
+
         async Task<string> DownloadPortsAndSurveyorsData() {
             var client = new WebClient();
             var json = await client.DownloadStringTaskAsync(new Uri(DataURL));
