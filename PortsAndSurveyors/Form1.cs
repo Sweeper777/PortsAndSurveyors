@@ -156,5 +156,14 @@ namespace PortsAndSurveyors {
             }
 
         }
+
+        private void portsListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            var selectedIndex = portsListBox.SelectedIndex;
+            surveyorsListBox.Items.Clear();
+            surveyorsListBox.Items.AddRange((portsListBox.SelectedItem as Port).Surveyors.Select(x => data.Surveyors[x]).ToArray());
+            var marker = markersOverlay.Markers.First(x => x.Tag == portsListBox.SelectedItem);
+            gmap.Position = marker.Position;
+            UpdateSurveyorInfoTextBoxes();
+        }
     }
 }
