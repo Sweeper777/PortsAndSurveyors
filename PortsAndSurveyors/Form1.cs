@@ -133,5 +133,10 @@ namespace PortsAndSurveyors {
             gmap.Position = item.Position;
         }
 
+        private async void updateButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            await UpdatePortsAndSurveyorsData();
+            ReloadEverything();
+        }
+
     }
 }
