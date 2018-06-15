@@ -165,5 +165,16 @@ namespace PortsAndSurveyors {
             gmap.Position = marker.Position;
             UpdateSurveyorInfoTextBoxes();
         }
+
+        private void UpdateSurveyorInfoTextBoxes() {
+            if (portsListBox.SelectedIndex == -1 || surveyorsListBox.SelectedIndex == -1) {
+                contactTextBox.Text = "";
+                priceTextBox.Text = "";
+            } else {
+                contactTextBox.Text = (surveyorsListBox.SelectedItem as Surveyor).Contacts;
+                priceTextBox.Text = (surveyorsListBox.SelectedItem as Surveyor).Prices;
+            }
+        }
+
     }
 }
