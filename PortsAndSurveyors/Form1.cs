@@ -176,5 +176,8 @@ namespace PortsAndSurveyors {
             }
         }
 
+        private void surveyorsListBox_SelectedIndexChanged(object sender, EventArgs e) {
+            UpdateSurveyorInfoTextBoxes();
+        }
     }
 }
