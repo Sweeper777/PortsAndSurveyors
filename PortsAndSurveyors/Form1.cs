@@ -138,5 +138,23 @@ namespace PortsAndSurveyors {
             ReloadEverything();
         }
 
+        private void LoadMarkers() {
+            if (markersOverlay == null) {
+                markersOverlay = new GMapOverlay("markers");
+                gmap.Overlays.Add(markersOverlay);
+            } else {
+                markersOverlay.Markers.Clear();
+            }
+
+            for (int i = 0 ; i < data.Ports.Count ; i++) {
+                var port = data.Ports[i];
+                var marker = new GMarkerGoogle(port.Location, GMarkerGoogleType.red);
+                marker.Tag = port;
+                marker.ToolTipText = port.Name;
+                marker.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                markersOverlay.Markers.Add(marker);
+            }
+
+        }
     }
 }
