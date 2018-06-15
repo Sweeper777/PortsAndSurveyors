@@ -124,5 +124,10 @@ namespace PortsAndSurveyors {
             }
             statusLabel.Text = "Successfully loaded ports and surveyors data.";
         }
+
+        private void searchButton_Click(object sender, EventArgs e) {
+            gmap.Zoom = 10;
+        }
+
     }
 }
