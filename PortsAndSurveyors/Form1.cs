@@ -129,5 +129,9 @@ namespace PortsAndSurveyors {
             gmap.Zoom = 10;
         }
 
+        private void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e) {
+            gmap.Position = item.Position;
+        }
+
     }
 }
