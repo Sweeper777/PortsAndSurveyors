@@ -15,6 +15,18 @@ namespace PortsAndSurveyors {
             Ports = ports;
         }
 
+        public List<Port> Search(string keywords) {
+            var match = Regex.Match(keywords.Trim(), @"^(\S+?)([NSns])\s+(\S+?)([WEwe])$");
+            if (match.Success) {
+                int lat;
+                var hasLat = int.TryParse(match.Groups[1].Value, out lat);
+                int lng;
+                var hasLng = int.TryParse(match.Groups[3].Value, out lng);
+            }
+            var keywordArray = Regex.Split(keywords, @"\s+");
+            return Search(keywordArray);
+        }
+
     static class PointLatLngHelper {
         public static double DistanceFrom(this PointLatLng p1, PointLatLng p2) {
             /*
