@@ -36,6 +36,14 @@ namespace PortsAndSurveyors {
             return Search(keywordArray);
         }
 
+        public List<Port> Search(params string[] keywords) {
+            return keywords.SelectMany(
+                x => Ports.Where(y => y.Name.Contains(x))
+                )
+                .GroupBy(x => x)
+                .OrderBy(x => x.Key)
+                .Select(x => x.Key).ToList();
+        }
     static class PointLatLngHelper {
         public static double DistanceFrom(this PointLatLng p1, PointLatLng p2) {
             /*
