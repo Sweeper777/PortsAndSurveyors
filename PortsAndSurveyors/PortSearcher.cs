@@ -22,6 +22,15 @@ namespace PortsAndSurveyors {
                 var hasLat = int.TryParse(match.Groups[1].Value, out lat);
                 int lng;
                 var hasLng = int.TryParse(match.Groups[3].Value, out lng);
+                if (hasLat && hasLng) {
+                    if (match.Groups[2].Value.ToUpperInvariant() == "S") {
+                        lat = -lat;
+                    }
+                    if (match.Groups[4].Value.ToUpperInvariant() == "W") {
+                        lng = -lng;
+                    }
+                    return Search(new PointLatLng(lat, lng));
+                }
             }
             var keywordArray = Regex.Split(keywords, @"\s+");
             return Search(keywordArray);
