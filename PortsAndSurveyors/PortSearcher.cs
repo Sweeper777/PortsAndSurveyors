@@ -44,6 +44,12 @@ namespace PortsAndSurveyors {
                 .OrderBy(x => x.Key)
                 .Select(x => x.Key).ToList();
         }
+
+        public List<Port> Search(PointLatLng coordinate) {
+            return Ports.OrderBy(x => x.Location.DistanceFrom(coordinate)).Take(10).ToList();
+        }
+    }
+
     static class PointLatLngHelper {
         public static double DistanceFrom(this PointLatLng p1, PointLatLng p2) {
             /*
