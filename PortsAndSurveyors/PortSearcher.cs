@@ -42,5 +42,8 @@ namespace PortsAndSurveyors {
             return d;
         }
 
+        public static double ToRadians(this double degrees) {
+            return degrees * (Math.PI / 180);
+        }
     }
 }
