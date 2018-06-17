@@ -81,12 +81,12 @@
             // 
             // portsListBox
             // 
-            this.portsListBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.portsListBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.portsListBox.FormattingEnabled = true;
-            this.portsListBox.ItemHeight = 15;
-            this.portsListBox.Location = new System.Drawing.Point(6, 52);
+            this.portsListBox.ItemHeight = 20;
+            this.portsListBox.Location = new System.Drawing.Point(6, 72);
             this.portsListBox.Name = "portsListBox";
-            this.portsListBox.Size = new System.Drawing.Size(284, 274);
+            this.portsListBox.Size = new System.Drawing.Size(284, 244);
             this.portsListBox.TabIndex = 3;
             this.portsListBox.SelectedIndexChanged += new System.EventHandler(this.portsListBox_SelectedIndexChanged);
             // 
