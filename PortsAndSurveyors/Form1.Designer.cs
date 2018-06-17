@@ -23,11 +23,11 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
-            this.updateButton = new System.Windows.Forms.LinkLabel();
-            this.statusLabel = new System.Windows.Forms.Label();
             this.portsListBox = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.searchResultsTypeLabel = new System.Windows.Forms.Label();
             this.surveyorsListBox = new System.Windows.Forms.ListBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
@@ -36,6 +36,12 @@
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.contactTextBox = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.spacing = new System.Windows.Forms.ToolStripStatusLabel();
+            this.updateButton = new System.Windows.Forms.ToolStripStatusLabel();
+            this.emailLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.developerLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
