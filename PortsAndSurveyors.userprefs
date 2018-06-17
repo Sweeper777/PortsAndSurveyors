@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{1124FBC5-F803-4C1B-81C3-8758F79B3A69}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PortsAndSurveyors/Form1.Designer.cs">
+    <Files>
+      <File FileName="PortsAndSurveyors/Form1.Designer.cs" Line="42" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PortsAndSurveyors" expanded="True">
+            <Node name="PortsAndSurveyors" expanded="True">
+              <Node name="References" expanded="True">
+                <Node name="From Packages" expanded="True">
+                  <Node name="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Form1.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.PortsAndSurveyors PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
