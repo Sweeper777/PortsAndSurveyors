@@ -79,28 +79,6 @@
             this.gmap.Zoom = 2D;
             this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick);
             // 
-            // updateButton
-            // 
-            this.updateButton.AutoSize = true;
-            this.updateButton.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.updateButton.Location = new System.Drawing.Point(694, 459);
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(247, 15);
-            this.updateButton.TabIndex = 1;
-            this.updateButton.TabStop = true;
-            this.updateButton.Text = "Update Ports and Suveyors Data";
-            this.updateButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.updateButton_LinkClicked);
-            // 
-            // statusLabel
-            // 
-            this.statusLabel.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.statusLabel.Location = new System.Drawing.Point(311, 478);
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(630, 17);
-            this.statusLabel.TabIndex = 2;
-            this.statusLabel.Text = "Loading ports and surveyors data...";
-            this.statusLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // portsListBox
             // 
             this.portsListBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
