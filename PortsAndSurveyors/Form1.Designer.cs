@@ -50,6 +50,9 @@
             // 
             // gmap
             // 
+            this.gmap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gmap.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gmap.Bearing = 0F;
             this.gmap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gmap.CanDragMap = true;
