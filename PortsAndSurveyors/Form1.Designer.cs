@@ -118,12 +118,14 @@
             // 
             // surveyorsListBox
             // 
-            this.surveyorsListBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.surveyorsListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.surveyorsListBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surveyorsListBox.FormattingEnabled = true;
-            this.surveyorsListBox.ItemHeight = 15;
+            this.surveyorsListBox.ItemHeight = 20;
             this.surveyorsListBox.Location = new System.Drawing.Point(6, 332);
             this.surveyorsListBox.Name = "surveyorsListBox";
-            this.surveyorsListBox.Size = new System.Drawing.Size(284, 139);
+            this.surveyorsListBox.Size = new System.Drawing.Size(284, 144);
             this.surveyorsListBox.TabIndex = 6;
             this.surveyorsListBox.SelectedIndexChanged += new System.EventHandler(this.surveyorsListBox_SelectedIndexChanged);
             // 
