@@ -211,15 +211,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.contactTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.contactTextBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.contactTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactTextBox.Location = new System.Drawing.Point(7, 21);
             this.contactTextBox.Multiline = true;
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.ReadOnly = true;
             this.contactTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.contactTextBox.Size = new System.Drawing.Size(299, 211);
+            this.contactTextBox.Size = new System.Drawing.Size(292, 247);
             this.contactTextBox.TabIndex = 0;
-            this.contactTextBox.Text = "This is some text xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             this.contactTextBox.WordWrap = false;
             // 
             // Form1
