@@ -182,15 +182,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.priceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.priceTextBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.priceTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceTextBox.Location = new System.Drawing.Point(7, 21);
             this.priceTextBox.Multiline = true;
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.ReadOnly = true;
             this.priceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.priceTextBox.Size = new System.Drawing.Size(299, 153);
+            this.priceTextBox.Size = new System.Drawing.Size(292, 147);
             this.priceTextBox.TabIndex = 0;
-            this.priceTextBox.Text = "This is some text xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             this.priceTextBox.WordWrap = false;
             // 
             // groupBox3
