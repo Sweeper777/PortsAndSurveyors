@@ -142,11 +142,12 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchTextBox.Location = new System.Drawing.Point(6, 20);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(252, 25);
+            this.searchTextBox.Size = new System.Drawing.Size(252, 27);
             this.searchTextBox.TabIndex = 4;
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
             // 
             // groupBox2
             // 
