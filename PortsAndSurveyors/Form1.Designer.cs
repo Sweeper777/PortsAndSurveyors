@@ -107,6 +107,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Query";
             // 
+            // searchResultsTypeLabel
+            // 
+            this.searchResultsTypeLabel.AutoSize = true;
+            this.searchResultsTypeLabel.Location = new System.Drawing.Point(7, 54);
+            this.searchResultsTypeLabel.Name = "searchResultsTypeLabel";
+            this.searchResultsTypeLabel.Size = new System.Drawing.Size(93, 15);
+            this.searchResultsTypeLabel.TabIndex = 7;
+            this.searchResultsTypeLabel.Text = "All known ports:";
+            // 
             // surveyorsListBox
             // 
             this.surveyorsListBox.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
