@@ -240,6 +240,12 @@
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(191, 19);
             this.statusLabel.Text = "Loading ports and surveyors data...";
+            // 
+            // spacing
+            // 
+            this.spacing.Name = "spacing";
+            this.spacing.Size = new System.Drawing.Size(241, 19);
+            this.spacing.Spring = true;
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
