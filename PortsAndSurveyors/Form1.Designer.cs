@@ -255,6 +255,16 @@
             this.updateButton.Text = "Click Here to Update Data";
             this.updateButton.VisitedLinkColor = System.Drawing.Color.Blue;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Clicked);
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
+            this.emailLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
+            this.emailLabel.IsLink = true;
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(240, 19);
+            this.emailLabel.Text = "Support Email: sumulang.apps@gmail.com";
+            this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
