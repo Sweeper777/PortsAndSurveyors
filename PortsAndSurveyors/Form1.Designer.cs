@@ -234,6 +234,12 @@
             this.statusStrip1.Size = new System.Drawing.Size(953, 24);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(191, 19);
+            this.statusLabel.Text = "Loading ports and surveyors data...";
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
