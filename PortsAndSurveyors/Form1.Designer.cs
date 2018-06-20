@@ -246,6 +246,15 @@
             this.spacing.Name = "spacing";
             this.spacing.Size = new System.Drawing.Size(241, 19);
             this.spacing.Spring = true;
+            // 
+            // updateButton
+            // 
+            this.updateButton.IsLink = true;
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(143, 19);
+            this.updateButton.Text = "Click Here to Update Data";
+            this.updateButton.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Clicked);
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
