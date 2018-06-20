@@ -265,6 +265,13 @@
             this.emailLabel.Size = new System.Drawing.Size(240, 19);
             this.emailLabel.Text = "Support Email: sumulang.apps@gmail.com";
             this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
+            // 
+            // developerLabel
+            // 
+            this.developerLabel.Name = "developerLabel";
+            this.developerLabel.Size = new System.Drawing.Size(123, 19);
+            this.developerLabel.Text = "Developer: Mulang Su";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
