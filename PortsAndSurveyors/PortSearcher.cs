@@ -81,4 +81,6 @@ namespace PortsAndSurveyors {
             return degrees * (Math.PI / 180);
         }
     }
+
+    public delegate void CoordinateFoundEventHandler(PortSearcher sender, PointLatLng coordinate);
 }
