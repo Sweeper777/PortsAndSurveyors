@@ -18,10 +18,10 @@ namespace PortsAndSurveyors {
         public List<Port> Search(string keywords) {
             var match = Regex.Match(keywords.Trim(), @"^(\S+?)([NSns])\s+(\S+?)([WEwe])$");
             if (match.Success) {
-                int lat;
-                var hasLat = int.TryParse(match.Groups[1].Value, out lat);
-                int lng;
-                var hasLng = int.TryParse(match.Groups[3].Value, out lng);
+                double lat;
+                var hasLat = double.TryParse(match.Groups[1].Value, out lat);
+                double lng;
+                var hasLng = double.TryParse(match.Groups[3].Value, out lng);
                 if (hasLat && hasLng) {
                     if (match.Groups[2].Value.ToUpperInvariant() == "S") {
                         lat = -lat;
