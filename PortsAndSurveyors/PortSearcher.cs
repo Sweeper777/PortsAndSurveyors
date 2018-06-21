@@ -29,7 +29,9 @@ namespace PortsAndSurveyors {
                     if (match.Groups[4].Value.ToUpperInvariant() == "W") {
                         lng = -lng;
                     }
-                    return Search(new PointLatLng(lat, lng));
+                    var coordinate = new PointLatLng(lat, lng);
+                    CoordinateFound(this, coordinate);
+                    return Search(coordinate);
                 }
             }
             var keywordArray = Regex.Split(keywords, @"\s+");
@@ -48,6 +50,8 @@ namespace PortsAndSurveyors {
         public List<Port> Search(PointLatLng coordinate) {
             return Ports.OrderBy(x => x.Location.DistanceFrom(coordinate)).Take(10).ToList();
         }
+
+        public event CoordinateFoundEventHandler CoordinateFound;
     }
 
     static class PointLatLngHelper {
