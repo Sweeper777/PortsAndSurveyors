@@ -5,6 +5,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
@@ -15,12 +16,14 @@ namespace PortsAndSurveyors {
     public partial class Form1 : Form {
         PortsAndASurveyorsData data;
         GMapOverlay markersOverlay;
+        GMapMarker searchMarker;
         List<Port> filteredPorts;
         string searchText = "";
+        PortSearcher portSearcher;
         List<Port> ShownPorts {
             get {
                 if (searchText.Trim() == "" || filteredPorts == null) {
-                    return data.Ports;
+                    return data.Ports.OrderBy(x => x.Name).ToList();
                 }
                 return filteredPorts;
             }
@@ -49,6 +52,8 @@ namespace PortsAndSurveyors {
 
         private void ReloadEverything() {
             if (data != null) {
+                portSearcher = new PortSearcher(data.Ports);
+                portSearcher.CoordinateFound += OnCoordinatesFound;
                 LoadMarkers();
                 portsListBox.Items.Clear();
                 portsListBox.Items.AddRange(ShownPorts.OrderBy(x => x.Name).ToArray());
@@ -115,25 +120,47 @@ namespace PortsAndSurveyors {
             } catch (JsonSerializationException) {
                 data = null;
                 statusLabel.Text = "Invalid Data Detected";
+                Controls.Cast<Control>().ForEach(x => x.Enabled = false);
                 return;
             }
             if (!VerifyData(data)) {
                 data = null;
                 statusLabel.Text = "Invalid Data Detected";
+                Controls.Cast<Control>().ForEach(x => x.Enabled = false);
                 return;
             }
             statusLabel.Text = "Successfully loaded ports and surveyors data.";
         }
 
         private void searchButton_Click(object sender, EventArgs e) {
-            gmap.Zoom = 10;
+            PerformSearch();
+
+        }
+
+        private void PerformSearch() {
+            searchText = searchTextBox.Text;
+            if (searchMarker != null) {
+                markersOverlay.Markers.Remove(searchMarker);
+            }
+            if (searchText.Trim() == "") {
+                filteredPorts = null;
+                searchResultsTypeLabel.Text = "All known ports:";
+            } else {
+                // must first set text
+                searchResultsTypeLabel.Text = "Search Results:";
+                filteredPorts = portSearcher.Search(searchText);
+            }
+
+            portsListBox.Items.Clear();
+            portsListBox.Items.AddRange(ShownPorts.ToArray());
+            markersOverlay.Markers.ForEach(x => x.IsVisible = true);
         }
 
         private void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e) {
             gmap.Position = item.Position;
         }
 
-        private async void updateButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+        private async void updateButton_Clicked(object sender, EventArgs e) {
             await UpdatePortsAndSurveyorsData();
             ReloadEverything();
         }
@@ -159,10 +186,19 @@ namespace PortsAndSurveyors {
 
         private void portsListBox_SelectedIndexChanged(object sender, EventArgs e) {
             var selectedIndex = portsListBox.SelectedIndex;
-            surveyorsListBox.Items.Clear();
-            surveyorsListBox.Items.AddRange((portsListBox.SelectedItem as Port).Surveyors.Select(x => data.Surveyors[x]).ToArray());
-            var marker = markersOverlay.Markers.First(x => x.Tag == portsListBox.SelectedItem);
-            gmap.Position = marker.Position;
+            
+            if (selectedIndex != -1) {
+                surveyorsListBox.Items.Clear();
+                surveyorsListBox.Items.AddRange((portsListBox.SelectedItem as Port).Surveyors.Select(x => data.Surveyors[x]).ToArray());
+                var marker = markersOverlay.Markers.First(x => x.Tag == portsListBox.SelectedItem);
+                gmap.Position = marker.Position;
+
+                markersOverlay.Markers.ForEach(x => x.IsVisible = false);
+                marker.IsVisible = true;
+            } else {
+                surveyorsListBox.Items.Clear();
+                markersOverlay.Markers.ForEach(x => x.IsVisible = true);
+            }
             UpdateSurveyorInfoTextBoxes();
         }
 
@@ -178,6 +214,32 @@ namespace PortsAndSurveyors {
 
         private void surveyorsListBox_SelectedIndexChanged(object sender, EventArgs e) {
             UpdateSurveyorInfoTextBoxes();
+        }
+
+        private void OnCoordinatesFound(PortSearcher searcher, PointLatLng coordinate) {
+            searchMarker = new GMarkerGoogle(coordinate, GMarkerGoogleType.green);
+            markersOverlay.Markers.Add(searchMarker);
+            gmap.Position = coordinate;
+            searchResultsTypeLabel.Text = "Nearest Ports:";
+        }
+
+        private void emailLabel_Click(object sender, EventArgs e) {
+            Process.Start("mailto:sumulang.apps@gmail.com?subject=Ports And Surveyors Support");
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+            if (e.KeyChar == 13) {
+                PerformSearch();
+                e.Handled = true;
+            }
+        }
+    }
+
+    static class EnumerableExtensions {
+        public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T> action) {
+            foreach (T val in enumerable) {
+                action(val);
+            }
         }
     }
 }

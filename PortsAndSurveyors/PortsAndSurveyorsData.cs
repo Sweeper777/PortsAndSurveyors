@@ -84,6 +84,14 @@ namespace PortsAndSurveyors {
         public override string ToString() {
             return Name;
         }
+
+        public override int GetHashCode() {
+            return (int)Id;
+        }
+
+        public override bool Equals(object obj) {
+            return GetHashCode() == obj.GetHashCode();
+        }
     }
 
     public partial class PortsAndASurveyorsData {
