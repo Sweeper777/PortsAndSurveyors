@@ -39,12 +39,16 @@ namespace PortsAndSurveyors {
         }
 
         public List<Port> Search(params string[] keywords) {
-            return keywords.SelectMany(
-                x => Ports.Where(y => y.Name.Contains(x))
-                )
-                .GroupBy(x => x)
-                .OrderBy(x => x.Key)
-                .Select(x => x.Key).ToList();
+            var query = from port in Ports
+                        group port by
+                        (from keyword in keywords
+                         where port.Name.ToLowerInvariant().Contains(keyword.ToLowerInvariant())
+                         select keyword).Count() into sameRelevanceGroup
+                        where sameRelevanceGroup.Key > 0
+                        orderby sameRelevanceGroup.Key descending
+                        from relevantPort in sameRelevanceGroup
+                        select relevantPort;
+            return query.ToList();
         }
 
         public List<Port> Search(PointLatLng coordinate) {
