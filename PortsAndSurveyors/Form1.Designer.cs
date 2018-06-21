@@ -275,16 +275,15 @@
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(953, 504);
+            this.ClientSize = new System.Drawing.Size(953, 529);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.statusLabel);
-            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.gmap);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(969, 543);
-            this.MinimumSize = new System.Drawing.Size(969, 543);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(969, 568);
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Ports and Surveyors";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
