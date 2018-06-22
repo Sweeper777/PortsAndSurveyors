@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using GMap.NET;
 
 namespace PortsAndSurveyors {
-    class PortSearcher {
+    public class PortSearcher {
         public List<Port> Ports {
             get;
         }
