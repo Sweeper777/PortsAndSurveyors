@@ -1,33 +1,17 @@
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe.config
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.pdb
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/Newtonsoft.Json.dll
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/Newtonsoft.Json.xml
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.csprojResolveAssemblyReference.cache
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.Properties.Resources.resources
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.csproj.GenerateResource.Cache
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.exe
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.pdb
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/GMap.NET.Core.dll
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/GMap.NET.WindowsForms.dll
-c:/users/user/documents/visual studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.Form1.resources
-C:/Users/User/Documents/Visual Studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe.manifest
-C:/Users/User/Documents/Visual Studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.application
-C:/Users/User/Documents/Visual Studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.exe.manifest
-C:/Users/User/Documents/Visual Studio 2015/Projects/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.application
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe.config
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe.manifest
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.application
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.exe
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/PortsAndSurveyors.pdb
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/GMap.NET.Core.dll
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/GMap.NET.WindowsForms.dll
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/Newtonsoft.Json.dll
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/bin/Debug/Newtonsoft.Json.xml
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.csprojResolveAssemblyReference.cache
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.Form1.resources
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.Properties.Resources.resources
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.csproj.GenerateResource.Cache
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.csproj.CoreCompileInputs.cache
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.exe
-/Users/mulangsu/Documents/PortsAndSurveyors/PortsAndSurveyors/obj/Debug/PortsAndSurveyors.pdb
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\PortsAndSurveyors.exe.config
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\PortsAndSurveyors.exe
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\PortsAndSurveyors.pdb
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.exe
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.pdb
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\GMap.NET.Core.dll
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\GMap.NET.WindowsForms.dll
+c:\users\user\documents\visual studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.Form1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\PortsAndSurveyors.exe.manifest
+C:\Users\User\Documents\Visual Studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\bin\Debug\PortsAndSurveyors.application
+C:\Users\User\Documents\Visual Studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.exe.manifest
+C:\Users\User\Documents\Visual Studio 2015\Projects\PortsAndSurveyors\PortsAndSurveyors\obj\Debug\PortsAndSurveyors.application
