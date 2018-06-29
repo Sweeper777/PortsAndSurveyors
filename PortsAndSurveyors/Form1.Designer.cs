@@ -169,16 +169,24 @@
             this.gmap.Zoom = 2D;
             this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick);
             // 
-            // portsListBox
+            // splitContainer2
             // 
-            this.portsListBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.portsListBox.FormattingEnabled = true;
-            this.portsListBox.ItemHeight = 20;
-            this.portsListBox.Location = new System.Drawing.Point(6, 72);
-            this.portsListBox.Name = "portsListBox";
-            this.portsListBox.Size = new System.Drawing.Size(284, 244);
-            this.portsListBox.TabIndex = 3;
-            this.portsListBox.SelectedIndexChanged += new System.EventHandler(this.portsListBox_SelectedIndexChanged);
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.groupBox1);
+            this.splitContainer2.Panel1MinSize = 150;
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
+            this.splitContainer2.Panel2MinSize = 150;
+            this.splitContainer2.Size = new System.Drawing.Size(632, 505);
+            this.splitContainer2.SplitterDistance = 297;
+            this.splitContainer2.TabIndex = 0;
             // 
             // groupBox1
             // 
