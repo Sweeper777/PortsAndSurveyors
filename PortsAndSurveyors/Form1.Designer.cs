@@ -302,25 +302,28 @@
         }
 
         #endregion
-
-        private GMap.NET.WindowsForms.GMapControl gmap;
-        private System.Windows.Forms.ListBox portsListBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox searchTextBox;
-        private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.ListBox surveyorsListBox;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox contactTextBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripStatusLabel updateButton;
         private System.Windows.Forms.ToolStripStatusLabel spacing;
         private System.Windows.Forms.ToolStripStatusLabel emailLabel;
         private System.Windows.Forms.ToolStripStatusLabel developerLabel;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private GMap.NET.WindowsForms.GMapControl gmap;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label searchResultsTypeLabel;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.ListBox portsListBox;
+        private System.Windows.Forms.ListBox surveyorsListBox;
+        private System.Windows.Forms.SplitContainer splitContainer4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox contactTextBox;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox priceTextBox;
     }
 }
 
