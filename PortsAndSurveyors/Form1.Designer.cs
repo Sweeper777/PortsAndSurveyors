@@ -119,6 +119,26 @@
             this.developerLabel.Name = "developerLabel";
             this.developerLabel.Size = new System.Drawing.Size(123, 19);
             this.developerLabel.Text = "Developer: Mulang Su";
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.gmap);
+            this.splitContainer1.Panel1MinSize = 100;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Panel2MinSize = 300;
+            this.splitContainer1.Size = new System.Drawing.Size(953, 505);
+            this.splitContainer1.SplitterDistance = 317;
+            this.splitContainer1.TabIndex = 7;
+            // 
             // gmap
             // 
             this.gmap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
