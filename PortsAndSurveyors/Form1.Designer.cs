@@ -69,6 +69,56 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel,
+            this.spacing,
+            this.updateButton,
+            this.emailLabel,
+            this.developerLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 505);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(953, 24);
+            this.statusStrip1.TabIndex = 6;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(191, 19);
+            this.statusLabel.Text = "Loading ports and surveyors data...";
+            // 
+            // spacing
+            // 
+            this.spacing.Name = "spacing";
+            this.spacing.Size = new System.Drawing.Size(241, 19);
+            this.spacing.Spring = true;
+            // 
+            // updateButton
+            // 
+            this.updateButton.IsLink = true;
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(143, 19);
+            this.updateButton.Text = "Click Here to Update Data";
+            this.updateButton.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Clicked);
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
+            this.emailLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
+            this.emailLabel.IsLink = true;
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(240, 19);
+            this.emailLabel.Text = "Support Email: sumulang.apps@gmail.com";
+            this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
+            // 
+            // developerLabel
+            // 
+            this.developerLabel.Name = "developerLabel";
+            this.developerLabel.Size = new System.Drawing.Size(123, 19);
+            this.developerLabel.Text = "Developer: Mulang Su";
             // gmap
             // 
             this.gmap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -242,42 +292,6 @@
             this.contactTextBox.TabIndex = 0;
             this.contactTextBox.WordWrap = false;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusLabel,
-            this.spacing,
-            this.updateButton,
-            this.emailLabel,
-            this.developerLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 505);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(953, 24);
-            this.statusStrip1.TabIndex = 6;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // statusLabel
-            // 
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(191, 19);
-            this.statusLabel.Text = "Loading ports and surveyors data...";
-            // 
-            // spacing
-            // 
-            this.spacing.Name = "spacing";
-            this.spacing.Size = new System.Drawing.Size(241, 19);
-            this.spacing.Spring = true;
-            // 
-            // updateButton
-            // 
-            this.updateButton.IsLink = true;
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(143, 19);
-            this.updateButton.Text = "Click Here to Update Data";
-            this.updateButton.VisitedLinkColor = System.Drawing.Color.Blue;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Clicked);
-            // 
-            // emailLabel
             // 
             this.emailLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
             this.emailLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
