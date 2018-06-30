@@ -203,14 +203,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Query";
             // 
-            // searchResultsTypeLabel
+            // splitContainer3
             // 
-            this.searchResultsTypeLabel.AutoSize = true;
-            this.searchResultsTypeLabel.Location = new System.Drawing.Point(7, 54);
-            this.searchResultsTypeLabel.Name = "searchResultsTypeLabel";
-            this.searchResultsTypeLabel.Size = new System.Drawing.Size(93, 15);
-            this.searchResultsTypeLabel.TabIndex = 7;
-            this.searchResultsTypeLabel.Text = "All known ports:";
+            this.splitContainer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer3.Location = new System.Drawing.Point(6, 72);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // surveyorsListBox
             // 
@@ -224,6 +224,15 @@
             this.surveyorsListBox.Size = new System.Drawing.Size(284, 144);
             this.surveyorsListBox.TabIndex = 6;
             this.surveyorsListBox.SelectedIndexChanged += new System.EventHandler(this.surveyorsListBox_SelectedIndexChanged);
+            // 
+            // searchResultsTypeLabel
+            // 
+            this.searchResultsTypeLabel.AutoSize = true;
+            this.searchResultsTypeLabel.Location = new System.Drawing.Point(7, 54);
+            this.searchResultsTypeLabel.Name = "searchResultsTypeLabel";
+            this.searchResultsTypeLabel.Size = new System.Drawing.Size(93, 15);
+            this.searchResultsTypeLabel.TabIndex = 7;
+            this.searchResultsTypeLabel.Text = "All known ports:";
             // 
             // searchButton
             // 
