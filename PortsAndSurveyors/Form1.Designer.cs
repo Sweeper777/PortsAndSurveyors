@@ -212,6 +212,18 @@
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.portsListBox);
+            this.splitContainer3.Panel1MinSize = 100;
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.surveyorsListBox);
+            this.splitContainer3.Panel2MinSize = 100;
+            this.splitContainer3.Size = new System.Drawing.Size(284, 427);
+            this.splitContainer3.SplitterDistance = 213;
+            this.splitContainer3.TabIndex = 8;
             // surveyorsListBox
             // 
             this.surveyorsListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
