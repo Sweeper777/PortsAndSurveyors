@@ -224,6 +224,20 @@
             this.splitContainer3.Size = new System.Drawing.Size(284, 427);
             this.splitContainer3.SplitterDistance = 213;
             this.splitContainer3.TabIndex = 8;
+            // 
+            // portsListBox
+            // 
+            this.portsListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.portsListBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.portsListBox.FormattingEnabled = true;
+            this.portsListBox.IntegralHeight = false;
+            this.portsListBox.ItemHeight = 20;
+            this.portsListBox.Location = new System.Drawing.Point(0, 0);
+            this.portsListBox.Name = "portsListBox";
+            this.portsListBox.Size = new System.Drawing.Size(284, 213);
+            this.portsListBox.TabIndex = 4;
+            this.portsListBox.SelectedIndexChanged += new System.EventHandler(this.portsListBox_SelectedIndexChanged);
+            // 
             // surveyorsListBox
             // 
             this.surveyorsListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
