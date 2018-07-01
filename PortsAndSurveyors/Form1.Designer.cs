@@ -338,19 +338,12 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.ReadOnly = true;
             this.contactTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.contactTextBox.Size = new System.Drawing.Size(292, 247);
+            this.contactTextBox.Size = new System.Drawing.Size(312, 201);
             this.contactTextBox.TabIndex = 0;
             this.contactTextBox.WordWrap = false;
             // 
             // groupBox4
             // 
-            this.emailLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
-            this.emailLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
-            this.emailLabel.IsLink = true;
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(240, 19);
-            this.emailLabel.Text = "Support Email: sumulang.apps@gmail.com";
-            this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
             this.groupBox4.Controls.Add(this.priceTextBox);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
@@ -360,12 +353,8 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Price Details";
             // 
-            // developerLabel
             // priceTextBox
             // 
-            this.developerLabel.Name = "developerLabel";
-            this.developerLabel.Size = new System.Drawing.Size(123, 19);
-            this.developerLabel.Text = "Developer: Mulang Su";
             this.priceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
