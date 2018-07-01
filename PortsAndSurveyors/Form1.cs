@@ -38,10 +38,11 @@ namespace PortsAndSurveyors {
         }
 
         private async void Form1_Load(object sender, EventArgs e) {
-            gmap.MapProvider = BingMapProvider.Instance;
+            gmap.MapProvider = GoogleMapProvider.Instance;
+            gmap.DisableFocusOnMouseEnter = true;
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
             gmap.MinZoom = 1;
-            gmap.MaxZoom = 5;
+            gmap.MaxZoom = 7;
             gmap.Position = new PointLatLng(0, 0);
             
 
