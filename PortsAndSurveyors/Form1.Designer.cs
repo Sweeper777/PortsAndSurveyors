@@ -302,21 +302,18 @@
             this.splitContainer4.Name = "splitContainer4";
             this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // priceTextBox
+            // splitContainer4.Panel1
             // 
-            this.priceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.priceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.priceTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTextBox.Location = new System.Drawing.Point(7, 21);
-            this.priceTextBox.Multiline = true;
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.ReadOnly = true;
-            this.priceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.priceTextBox.Size = new System.Drawing.Size(292, 147);
-            this.priceTextBox.TabIndex = 0;
-            this.priceTextBox.WordWrap = false;
+            this.splitContainer4.Panel1.Controls.Add(this.groupBox3);
+            this.splitContainer4.Panel1MinSize = 100;
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.groupBox4);
+            this.splitContainer4.Panel2MinSize = 100;
+            this.splitContainer4.Size = new System.Drawing.Size(325, 483);
+            this.splitContainer4.SplitterDistance = 228;
+            this.splitContainer4.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -366,10 +363,24 @@
             this.groupBox4.Text = "Price Details";
             // 
             // developerLabel
+            // priceTextBox
             // 
             this.developerLabel.Name = "developerLabel";
             this.developerLabel.Size = new System.Drawing.Size(123, 19);
             this.developerLabel.Text = "Developer: Mulang Su";
+            this.priceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.priceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.priceTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceTextBox.Location = new System.Drawing.Point(7, 21);
+            this.priceTextBox.Multiline = true;
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.ReadOnly = true;
+            this.priceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.priceTextBox.Size = new System.Drawing.Size(312, 224);
+            this.priceTextBox.TabIndex = 0;
+            this.priceTextBox.WordWrap = false;
             // 
             // Form1
             // 
