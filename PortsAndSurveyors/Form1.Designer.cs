@@ -295,17 +295,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Surveyor Info";
             // 
-            // groupBox4
+            // splitContainer4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.priceTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(13, 20);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(305, 174);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Price Details";
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(3, 19);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // priceTextBox
             // 
@@ -352,6 +347,7 @@
             this.contactTextBox.TabIndex = 0;
             this.contactTextBox.WordWrap = false;
             // 
+            // groupBox4
             // 
             this.emailLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
             this.emailLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
@@ -360,6 +356,14 @@
             this.emailLabel.Size = new System.Drawing.Size(240, 19);
             this.emailLabel.Text = "Support Email: sumulang.apps@gmail.com";
             this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
+            this.groupBox4.Controls.Add(this.priceTextBox);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(0, 0);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(325, 251);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Price Details";
             // 
             // developerLabel
             // 
