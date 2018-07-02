@@ -227,7 +227,8 @@ namespace PortsAndSurveyors {
         }
 
         private void OnCoordinatesFound(PortSearcher searcher, PointLatLng coordinate) {
-            searchMarker = new GMarkerGoogle(coordinate, GMarkerGoogleType.green);
+            searchMarker = new GMarkerGoogle(coordinate, Properties.Resources.green);
+            searchMarker.Offset = new System.Drawing.Point(-12, -12);
             markersOverlay.Markers.Add(searchMarker);
             gmap.Position = coordinate;
             searchResultsTypeLabel.Text = "Nearest Ports:";
