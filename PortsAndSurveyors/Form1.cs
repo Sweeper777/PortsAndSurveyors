@@ -56,10 +56,12 @@ namespace PortsAndSurveyors {
                 portSearcher = new PortSearcher(data.Ports);
                 portSearcher.CoordinateFound += OnCoordinatesFound;
                 LoadMarkers();
+                searchText = "";
                 portsListBox.Items.Clear();
                 portsListBox.Items.AddRange(ShownPorts.OrderBy(x => x.Name).ToArray());
                 //Console.WriteLine(data.Surveyors);
                 surveyorsListBox.Items.Clear();
+                UpdateSurveyorInfoTextBoxes();
             } else {
                 MessageBox.Show("Invalid Data Detected!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -153,8 +155,12 @@ namespace PortsAndSurveyors {
             }
 
             portsListBox.Items.Clear();
+            surveyorsListBox.Items.Clear();
             portsListBox.Items.AddRange(ShownPorts.ToArray());
-            markersOverlay.Markers.ForEach(x => x.IsVisible = true);
+            markersOverlay.Markers.ForEach(x => x.IsVisible = false);
+            markersOverlay.Markers.Where(x => ShownPorts.Contains((Port)x.Tag) || x == searchMarker).ForEach(x => x.IsVisible = true);
+
+            UpdateSurveyorInfoTextBoxes();
         }
 
         private void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e) {
