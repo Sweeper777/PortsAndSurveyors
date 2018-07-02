@@ -100,6 +100,7 @@ namespace PortsAndSurveyors {
 
         async Task<string> DownloadPortsAndSurveyorsData() {
             var client = new WebClient();
+            client.Encoding = System.Text.Encoding.UTF8;
             var json = await client.DownloadStringTaskAsync(new Uri(DataURL));
             return json;
         }
