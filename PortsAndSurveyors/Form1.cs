@@ -183,10 +183,12 @@ namespace PortsAndSurveyors {
 
             for (int i = 0 ; i < data.Ports.Count ; i++) {
                 var port = data.Ports[i];
-                var marker = new GMarkerGoogle(port.Location, GMarkerGoogleType.red);
+                var marker = new GMarkerGoogle(port.Location, Properties.Resources.blue);
+                marker.Offset = new System.Drawing.Point(-12, -12);
                 marker.Tag = port;
                 marker.ToolTipText = port.Name;
                 marker.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                marker.ToolTip.Font = new System.Drawing.Font(marker.ToolTip.Font.FontFamily, 10);
                 markersOverlay.Markers.Add(marker);
             }
 
